@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0f1035;
+  background: linear-gradient(135deg, #dcf2f1, #365486);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(96, 119, 159, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #60779f;
+  clip-path: ellipse(50% 100% at 50% 100%);
+}
+
+.hero-illustration img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(15, 16, 53);
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.icon .play-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.icon:hover {
+  background-color: #60779f;
+}
+
+.hero-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.categories-section {
+  margin-top: 0px;
+  background-color: #60779f;
+  color: white;
+  padding: 10px 0 120px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.category-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+.categories-section h2 {
+  margin-bottom: 20px;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.category-list li {
+  margin: 10px;
+}
+
+.category-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #0f1035;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.category-list li a:hover {
+  background-color: #60779f;
+}
+
+.books-section {
+  background-color: #60779f;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.books-section h2 {
+  margin-bottom: 20px;
+}
+
+.books-section table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.books-section th,
+.books-section td {
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+}
+
+.books-section th {
+  background-color: #0f1035;
+  color: white;
+}
